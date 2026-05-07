@@ -5,7 +5,7 @@ describe("capitalize", () => {
     expect(typeof capitalize).toBe("function");
   });
 
-  describe("capitalize", () => {
+  describe("capitalize()", () => {
     test("should return value back on variable not string", () => {
       const obj = {};
       expect(capitalize(obj)).toBe(obj);
@@ -30,6 +30,14 @@ describe("capitalize", () => {
 
     test("should capitalize only first letter and leave rest of the word unmodified", () => {
       expect(capitalize("anD another 1")).toBe("AnD another 1");
+    });
+
+    test("should capitalize only first letter if word is one letter", () => {
+      expect(capitalize("a")).toBe("A");
+    });
+
+    test("should return character back if character not an alphabet letter", () => {
+      expect(capitalize("$")).toBe("$");
     });
   });
 });
