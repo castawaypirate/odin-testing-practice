@@ -6,7 +6,7 @@ describe("ceasar cipher", () => {
   });
 
   describe("ceasarCipher", () => {
-    test("should recieve text as first argument", () => {
+    test("should receive text as first argument", () => {
       expect(() => ceasarCipher(123, 1)).toThrow(
         "First argument should be a string",
       );
@@ -18,7 +18,7 @@ describe("ceasar cipher", () => {
       );
     });
 
-    test("should recieve number as second argument", () => {
+    test("should receive number as second argument", () => {
       expect(() => ceasarCipher("message", "number")).toThrow(
         "Second argument should be a number",
       );
