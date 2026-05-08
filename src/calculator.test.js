@@ -11,7 +11,7 @@ describe("calculator", () => {
       expect(typeof calculator.add).toBe("function");
     });
 
-    test("add function should return error message when one or both parameters are not numbers", () => {
+    test("add function should return error message when one or both arguments are not numbers", () => {
       expect(() => calculator.add(1, "1")).toThrow("Arguments must be numbers");
     });
 
@@ -31,7 +31,7 @@ describe("calculator", () => {
       expect(typeof calculator.subtract).toBe("function");
     });
 
-    test("subtract function should return error message when one or both parameters are not numbers", () => {
+    test("subtract function should return error message when one or both arguments are not numbers", () => {
       expect(() => calculator.subtract(1, "1")).toThrow(
         "Arguments must be numbers",
       );
@@ -53,13 +53,13 @@ describe("calculator", () => {
       expect(typeof calculator.divide).toBe("function");
     });
 
-    test("divide function should return error message when one or both parameters are not numbers", () => {
+    test("divide function should return error message when one or both arguments are not numbers", () => {
       expect(() => calculator.divide(1, "1")).toThrow(
         "Arguments must be numbers",
       );
     });
 
-    test("divide function should return error message when second parameter is 0", () => {
+    test("divide function should return error message when second argument is 0", () => {
       expect(() => calculator.divide(1, 0)).toThrow("Cannot divide with zero");
     });
 
@@ -79,7 +79,7 @@ describe("calculator", () => {
       expect(typeof calculator.multiply).toBe("function");
     });
 
-    test("multiply function should return error message when one or both parameters are not numbers", () => {
+    test("multiply function should return error message when one or both arguments are not numbers", () => {
       expect(() => calculator.multiply(1, "1")).toThrow(
         "Arguments must be numbers",
       );
